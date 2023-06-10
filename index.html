@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>waterdrop</title>
+    <style>
+        section {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        section>div {
+            width: 10px;
+            height: 10px;
+            border: 4px solid red;
+            position: absolute;
+            border-radius: 100%;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            animation-name: my-animation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+
+
+        }
+
+        @keyframes my-animation {
+            from {
+                width: 10px;
+                height: 10px;
+
+            }
+
+            to {
+                width: 400px;
+                height: 400px;
+                opacity: 0;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div></div>
+    </section>
+</body>
+
+</html>
